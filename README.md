@@ -76,7 +76,7 @@ TUGAS 1
     <div class="aboutme-title">About Me</div>
     <table>
       <tr>
-        <td>ANDRIANSYA</td>
+        <td>ANDRIANSYAH</td>
         <td>SMA</td>
         <td>TRAAVELLING</td>
       </tr>
