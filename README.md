@@ -1,113 +1,106 @@
-# HTMLPORTFOLIO1
-TUGAS 1
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Website Saya</title>
+  <title>Portofolio Saya</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    header, section {
-      margin-bottom: 40px;
-    }
-    nav {
-      text-align: right;
-    }
-    nav a {
-      margin-left: 15px;
-      text-decoration: none;
-      color: black;
-    }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 20px;
     }
+
     td, th {
       border: 1px solid #ccc;
       padding: 10px;
       text-align: center;
+      vertical-align: top;
     }
-    .aboutme-title {
-      text-align: center;
+
+    .menu {
+      background-color: #f0f0f0;
       font-weight: bold;
-      font-size: 1.5em;
+      text-align: center;
     }
-    .portfolio-title {
-      font-size: 1.3em;
-      margin-top: 30px;
-      margin-bottom: 10px;
+
+    .header-section img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .about-me {
+      background-color: #f9f9f9;
+    }
+
+    .portfolio img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .section-title {
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 10px 0;
+      background-color: #ddd;
     }
   </style>
 </head>
 <body>
 
-  <!-- Section 1: Menu -->
-  <header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Portofolio</a>
-    </nav>
-  </header>
+<!-- Section 1: Menu -->
+<table class="menu">
+  <tr>
+    <td>Home</td>
+    <td>Tentang Saya</td>
+    <td>Portofolio</td>
+    <td>Kontak</td>
+  </tr>
+</table>
 
-  <!-- Section 2: Judul kiri, gambar kanan -->
-  <section>
-    <table>
-      <tr>
-        <td>
-          <h2>Selamat Datang di Website Saya</h2>
-          <p>Ini adalah contoh header dengan deskripsi. Buat ini menarik agar pengunjung betah di halaman anda.</p>
-        </td>
-        <td>
-          <img src=https://th.bing.com/th/id/OIP.w0qWHQQkOu96YLuetR2VGQHaE8?w=239&h=188&c=7&r=0&o=5&cb=iwc1&pid=1.7>
-        </td>
-      </tr>
-    </table>
-  </section>
+<!-- Section 2: Header dengan dua kolom -->
+<table class="header-section">
+  <tr>
+    <td>
+      <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
+      <button>Pelajari Lebih Lanjut</button>
+    </td>
+    <td>
+      <img src="https://via.placeholder.com/300x200.png?text=Gambar+Header" alt="Gambar Header">
+    </td>
+  </tr>
+</table>
 
-  <!-- Section 3: Biodata -->
-  <section>
-    <div class="aboutme-title">About Me</div>
-    <table>
-      <tr>
-        <td>ANDRIANSYAH</td>
-        <td>SMA</td>
-        <td>TRAAVELLING</td>
-      </tr>
-      <tr>
-        <td>081808910414</td>
-        <td>NOTHING</td>
-        <td>NOTHING</td>
-      </tr>
-    </table>
-  </section>
+<!-- Section 3: Biodata -->
+<table class="about-me">
+  <tr><td colspan="6" class="section-title">About Me</td></tr>
+  <tr><td colspan="6">A brief introduction about myself</td></tr>
+  <tr>
+    <td>Full Name<br>Aji Pamungkas</td>
+    <td>Education<br>Universitas XYZ</td>
+    <td>Pekerjaan<br>Web Developer</td>
+    <td>Contact<br>email@example.com</td>
+    <td>Hobi<br>Desain & Coding</td>
+    <td>Alamat<br>Jakarta, Indonesia</td>
+  </tr>
+</table>
 
-  <!-- Section 4: Portofolio -->
-  <section>
-    <div class="portfolio-title">Portofolio</div>
-    <table>
-      <tr>
-        <td>
-          <img src="https://th.bing.com/th/id/OIP.w0qWHQQkOu96YLuetR2VGQHaE8?w=239&h=188&c=7&r=0&o=5&cb=iwc1&pid=1.7"><br>
-          Project 1<br>Deskripsi project 1
-        </td>
-        <td>
-          <img src=https://th.bing.com/th/id/OIP.w0qWHQQkOu96YLuetR2VGQHaE8?w=239&h=188&c=7&r=0&o=5&cb=iwc1&pid=1.7"><br>
-          Project 2<br>Deskripsi project 2
-        </td>
-        <td>
-          <img src=https://th.bing.com/th/id/OIP.w0qWHQQkOu96YLuetR2VGQHaE8?w=239&h=188&c=7&r=0&o=5&cb=iwc1&pid=1.7><br>
-          Project 3<br>Deskripsi project 3
-        </td>
-      </tr>
-    </table>
-  </section>
+<!-- Section 4: Portofolio -->
+<table class="portfolio">
+  <tr><td colspan="3" class="section-title">Portofolio</td></tr>
+  <tr>
+    <td>
+      <img src="https://via.placeholder.com/200x150.png?text=Proyek+1" alt="Proyek 1">
+      <div>Proyek 1<br>Deskripsi proyek 1.</div>
+    </td>
+    <td>
+      <img src="https://via.placeholder.com/200x150.png?text=Proyek+2" alt="Proyek 2">
+      <div>Proyek 2<br>Deskripsi proyek 2.</div>
+    </td>
+    <td>
+      <img src="https://via.placeholder.com/200x150.png?text=Proyek+3" alt="Proyek 3">
+      <div>Proyek 3<br>Deskripsi proyek 3.</div>
+    </td>
+  </tr>
+</table>
 
 </body>
 </html>
